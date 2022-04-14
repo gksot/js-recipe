@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>Q,問題</h1>
+    <div id="element1">はしもんの趣味はなんでしょう</div>
+
+    <button id="circle1">温泉</button>
+    <button id="circle2">漫画</button>
+    <button id="circle3">観劇</button>
+
+    <!-- 正解か不正解かを表示 -->
+    <div id="element"></div>
+
+    <script>
+      //要素取得
+      const tagElement = document.getElementById("tag")
+      const element = document.getElementById("element")
+      const circle1 = document.getElementById("circle1")
+      const circle2 = document.getElementById("circle2")
+      const circle3 = document.getElementById("circle3")
+
+      // ボタン押したら正解or不正解を表示させる処理をかく
+      circle1.onclick = function () {
+        element.textContent = "不正解です！"
+      }
+      circle2.onclick = function () {
+        element.textContent = "正解です！"
+      }
+      circle3.onclick = function () {
+        element.textContent = "不正解です！"
+      }
+    </script>
+  </body>
+</html>
